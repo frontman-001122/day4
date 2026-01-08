@@ -1,3 +1,231 @@
-<html>
-thungali
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Verza Honda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+}
+
+/* MAIN CONTAINER */
+.hero{
+    height:100vh;
+    display:flex;
+    position:relative;
+    overflow:hidden;
+}
+
+/* LEFT & RIGHT BACKGROUND */
+.left{
+    width:50%;
+    background:#000;
+    position:relative;
+}
+
+.right{
+    width:50%;
+    background:#fff;
+    position:relative;
+}
+
+/* DIAGONAL STRIPS */
+.strip-red{
+    position:absolute;
+    width:200px;
+    height:120%;
+    background:#ff2a00;
+    top:-10%;
+    left:45%;
+    transform:skewX(-15deg);
+}
+
+.strip-gray{
+    position:absolute;
+    width:200px;
+    height:120%;
+    background:#444;
+    top:-10%;
+    left:55%;
+    transform:skewX(-15deg);
+}
+
+/* NAVBAR */
+.nav{
+    position:absolute;
+    top:30px;
+    width:100%;
+    padding:0 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.menu{
+    color:#333;
+    font-size:14px;
+}
+
+.menu span{
+    margin:0 10px;
+    cursor:pointer;
+}
+
+.icons{
+    display:flex;
+    gap:15px;
+}
+
+.icon{
+    width:35px;
+    height:35px;
+    background:#000;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+}
+
+/* BIKE IMAGE */
+.bike{
+    position:absolute;
+    width:700px;
+    left:50%;
+    top:55%;
+    transform:translate(-50%, -50%);
+    z-index:5;
+}
+
+.bike img{
+    width:1000px;
+}
+
+/* LEFT TEXT */
+.left-text{
+    position:absolute;
+    bottom:60px;
+    left:60px;
+    color:#fff;
+}
+
+.left-text h1{
+    font-size:48px;
+    letter-spacing:2px;
+}
+
+.left-text span{
+    color:#ff2a00;
+}
+
+.left-text p{
+    font-size:26px;
+    margin-top:10px;
+}
+
+/* RIGHT TEXT */
+.right-text{
+    position:absolute;
+    bottom:70px;
+    right:60px;
+    color:#000;
+    text-align:right;
+}
+
+.right-text h2{
+    font-size:32px;
+}
+
+.right-text span{
+    color:#ff2a00;
+    font-weight:bold;
+}
+
+.right-text p{
+    font-size:14px;
+    margin-top:10px;
+    color:#444;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .bike{
+        width:90%;
+    }
+    .left-text h1{
+        font-size:36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+    <!-- NAVBAR -->
+    <div class="nav">
+        <div class="logo">R</div>
+
+        <div class="menu">
+
+        <a href="car.html">MODEL</a> //
+        <a href="history.html">HISTORY</a> //
+        <a href="about.html">ABOUT</a>
+        
+        </div>
+
+        <div class="icons">
+            <div class="icon">🔍</div>
+            <div class="icon">🛒</div>
+        </div>
+    </div>
+
+    <!-- BACKGROUNDS -->
+    <div class="left"></div>
+    <div class="right"></div>
+
+    <div class="strip-red"></div>
+    <div class="strip-gray"></div>
+
+    <!-- BIKE -->
+    <div class="bike">
+        <img src="me1.png" alt="Bike">
+    </div>
+
+    <!-- TEXT LEFT -->
+    <div class="left-text">
+        <h1>VERZA <span>HONDA</span></h1>
+        <p>2018</p>
+    </div>
+
+    <!-- TEXT RIGHT -->
+    <div class="right-text">
+        <h2>Custom<span>Naked</span></h2>
+        <p>
+            9.72 kW (13.2 PS) / 8,500 rpm<br>
+            12.7 Nm / 6,000 rpm<br>
+            5 speed
+        </p>
+    </div>
+
+</div>
+
+</body>
 </html>
